@@ -1,4 +1,4 @@
-Wine Quality Exploration by Katerina Bicakci
+Wine Quality Exploration
 ========================================================
 # Introduction
 
