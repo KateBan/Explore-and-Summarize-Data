@@ -1,7 +1,7 @@
 ---
 output: html_document
 ---
-Wine Quality Exploration by Katerina Baneva
+Wine Quality Exploration by Katerina Bicakci
 ========================================================
 # Introduction
 
@@ -777,7 +777,7 @@ with(subset(wine, color == "red"),
      cor.test(pH,log10(TA.acidity)))
 ```
 
-High negative correlation between those two variables, especially in red wines. While one may think that TA and pH are directly correlated as acidity indicators, they are not.The measurement of pH is the number of H+ ions in a solution using a logarithmic scale, with a lower number denoting a higher concentration of H+ ions. Translation: the difference between a wine with a pH of 4.0 and with a pH of 3.0 is that the wine with the pH of 3.0 has 10x the  number of hydrogen ions as the pH 4.0 wine (or 1x10-3 versus 1x10-4 H+ ions). The measurement of acidic content is the acid’s potential to liberate H+ ions as it dissociates. While acid content affects pH, it is not directly predictive of pH (or vice versa). This non-direct correlation is partially due to pH “buffering” caused by a number of compounds in wines, such as sugars, acids, and phenolic compounds. Buffering occurs because these compounds exist in equilibrium between their acid and conjugate base forms; the ratio of the two forms to one another must be significantly shifted before a noticeable pH change can occur. Just as pH calibration buffer solutions effectively calibrate pH equipment due to their reliable stability, the addition of a given amount of acid to a wine may not reduce the pH as expected due to the wine’s buffering capacity to maintain a stable pH. .
+High negative correlation between those two variables, especially in red wines. While one may think that TA and pH are directly correlated as acidity indicators, they are not.The measurement of pH is the number of H+ ions in a solution using a logarithmic scale, with a lower number denoting a higher concentration of H+ ions. Translation: the difference between a wine with a pH of 4.0 and with a pH of 3.0 is that the wine with the pH of 3.0 has 10x the  number of hydrogen ions as the pH 4.0 wine (or 1x10-3 versus 1x10-4 H+ ions). The measurement of acidic content is the acidÂ’s potential to liberate H+ ions as it dissociates. While acid content affects pH, it is not directly predictive of pH (or vice versa). This non-direct correlation is partially due to pH Â“bufferingÂ” caused by a number of compounds in wines, such as sugars, acids, and phenolic compounds. Buffering occurs because these compounds exist in equilibrium between their acid and conjugate base forms; the ratio of the two forms to one another must be significantly shifted before a noticeable pH change can occur. Just as pH calibration buffer solutions effectively calibrate pH equipment due to their reliable stability, the addition of a given amount of acid to a wine may not reduce the pH as expected due to the wineÂ’s buffering capacity to maintain a stable pH. .
 
 ```{r echo = FALSE, message=FALSE, warning=FALSE}
 
